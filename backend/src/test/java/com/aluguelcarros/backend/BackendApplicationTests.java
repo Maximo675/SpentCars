@@ -1,4 +1,4 @@
-package com.aluguelcarros.backend;
+package test.java.com.aluguelcarros.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
