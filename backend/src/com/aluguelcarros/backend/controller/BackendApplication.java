@@ -1,13 +1,16 @@
-package com.aluguelcarros.backend.controller;
+package com.aluguelcarros.backend.controller; // OU o pacote base do seu projeto
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.aluguelcarros.backend.controller.BackendApplication; // Importe sua classe principal
 
-@SpringBootApplication
-public class BackendApplication {
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
-	public static void main(String[] args) {
-		SpringApplication.run(BackendApplication.class, args);
+@SpringBootTest(classes = BackendApplication.class) // <--- Esta anotação é crucial
+class BackendApplicationTests {
+
+	@Test
+	void contextLoads() {
+		// Este teste verifica se o contexto do Spring Boot carrega corretamente
 	}
 
 }
